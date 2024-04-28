@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./assets/images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <a href="">Home</a>
+        <a href="">New</a>
+        <a href="">Popular</a>
+        <a href="">Trending</a>
+        <a href="">Categories</a>
+      </nav>
+      <!----------------------Mobile Menu button-------------->
+      <div class="mobile-btn" onclick="showSlidebar()">
+        <a href="#"><img src="./assets/images/icon-menu.svg" alt="menu" /></a>
+      </div>
+    </header>
+     <!-------------------Mobible Navigation Menu------------->
+     <div class="slidbar">
+      <img src="./assets/images/icon-menu-close.svg" alt="close">
+      <div class="navagation">
+
+        <p><a href="">Home</a></p>
+        <p><a href="">New</a></p>
+        <p><a href="">Population</a></p>
+        <p><a href="">Trending</a></p> 
+      </div>
+      
+     </div>
+    <main class="main1">
+      <section class="section1">
+        <article class="article1">
+          <div class="col1 col">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="image" />
+          </div>
+          <div class="col2 col">
+            <div class="child child1">
+              <h2>New</h2>
+              <p class="p1">Hydrogen Vs Electric Cars</p>
+              <p class="p2">Will hydrogen-fail cars even cath up to EVs?</p>
+            </div>
+            <div class="child child2">
+              <h2>The Downsides of AI Artistry</h2>
+              <p class="pp1">
+                What are the possible adverse effects of on-demand AI Image
+                generator
+              </p>
+            </div>
+            <div class="child child3">
+              <h2>Is VC Funding Drying Up?</h2>
+              <p class="pp2">
+                Private funding by VC firms is down 50% YOY. We take at what
+                that means.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="article2">
+          <div class="colum1 colum"><h1>The Bright Future of Web 3.0?</h1></div>
+          <div class="colum2 colum">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button type="submit">READ MORE..</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="section2">
+        <article class="article3">
+          <div class="div1 div">
+            <div class="colm-img">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="image" />
+            </div>
+            <div class="colm">
+              <p class="num1">01</p>
+              <p class="text1">Reviving Retro PCs</p>
+              <p class="text3">
+                What happens when old PCs are given modern upgrades
+              </p>
+            </div>
+          </div>
+
+          <div class="div2 div">
+            <div class="colm-img">
+              <img src="./assets/images/image-top-laptops.jpg" alt="image" />
+            </div>
+            <div class="colm">
+              <p class="num1">02</p>
+              <p class="text2">Top 10 Laptops of 2022</p>
+              <p class="text3">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+
+          <div class="div3 div">
+            <div class="colm-img">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+            </div>
+            <div class="colm">
+              <p class="num1">03</p>
+              <p class="text1">Top 10 Laptops of 2022</p>
+              <p class="text3">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!--------------------Mobile Design----------------->
+    <main class="main2">
+      <section class="mobile-sec1">
+        <article class="mobile-art-1">
+          <div class="mobile-img">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="image" />
+          </div>
+          <div class="mobile-text">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button type="submit">READ MORE..</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="mobile-sec2">
+        <article class="mobile-art-2">
+          <div class="row">
+            <div class="box1">
+              <h2 class="h1">New</h2>
+              <p class="text1">Hydrogen Vs Electric Cars</p>
+              <p class="">Will hydrogen-fail cars even cath up to EVs?</p>
+            </div>
+            <div class="box1">
+              <h2>The Downsides of AI Artistry</h2>
+              <p class="">
+                What are the possible adverse effects of on-demand AI Image
+                generator
+              </p>
+            </div>
+            <div class="">
+              <h2>Is VC Funding Drying Up?</h2>
+              <p class="">
+                Private funding by VC firms is down 50% YOY. We take at what
+                that means.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="mobile-sec3">
+        <article class="mobile-art-3">
+          <div class="box box-1">
+            <div class="">
+              <img src="./assets/images/image-retro-pcs.jpg" alt="image" />
+            </div>
+            <div class="baby">
+              <p class="numb1">01</p>
+              <p class="para1">Reviving Retro PCs</p>
+              <p class="para2">
+                What happens when old PCs are given modern upgrades
+              </p>
+            </div>
+          </div>
+
+          <div class="box box-2">
+            <div class="">
+              <img src="./assets/images/image-top-laptops.jpg" alt="image" />
+            </div>
+            <div class="baby">
+              <p class="numb1">02</p>
+              <p class="para1">Top 10 Laptops of 2022</p>
+              <p class="para2">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+
+          <div class="box box-3">
+            <div class="colm-img">
+              <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+            </div>
+            <div class="baby">
+              <p class="numb1">03</p>
+              <p class="para1">Top 10 Laptops of 2022</p>
+              <p class="para2">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

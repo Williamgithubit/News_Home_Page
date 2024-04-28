@@ -1,0 +1,668 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "calibri";
+}
+
+body {
+  padding: 30px 100px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.mobile-btn{
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 14px;
+  font-size: 19px;
+  padding:5px 0;
+}
+
+nav a:hover {
+  background-color: #f1f1f1;
+}
+
+.section1 {
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+}
+
+.article1 {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  /* grid-auto-rows: minmax(100%, auto); */
+  grid-gap: 0 1em;
+}
+
+.col1 {
+  grid-column: 1/3;
+  grid-auto-rows: minmax(100px);
+  height: 310px;
+}
+
+.col1 img {
+  width: 100%;
+}
+
+.col2 {
+  background-color: #000;
+  padding: 20px 50px 0;
+  grid-auto-rows: minmax(300px, auto);
+  color: #fff;
+}
+
+.col2 .child {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 260px;
+}
+
+.col2, .child1, .child2{
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.child1 h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.child1 {
+  padding-bottom: 0;
+}
+
+.child1 .p1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.child1 .p2 {
+  font-size: 17px;
+  margin-top: -20px;
+}
+
+.child2 {
+  height: 145px;
+}
+
+.child2 h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 22px;
+}
+
+.child2 .pp1{
+    font-size: 20px;
+}
+
+
+.article2 {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 37% 64%);
+  grid-auto-rows: minmax(100% auto);
+  margin-top: -120px;
+}
+
+.article2 .colum1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.article2 .colum2{
+    font-size: 18px;
+}
+
+.article2 button {
+  background-color: #000;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 14px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.article2 button:hover{
+    background-color: #fa8c8c;
+}
+
+/*********************Section 2********************************/
+.section2{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.article3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.article3 img{
+    width: 100%;
+    object-fit: cover;
+} 
+
+.div{
+   width: 100%;
+   display: flex;
+   gap: 10px;
+   /* justify-content: space-between; */
+}
+
+.div .colm{
+  width: 80%;
+}
+
+.div .colm-img{
+  width: 40%;
+}
+
+.colm .num1{
+  font-size: 40px;
+  color: rgb(216, 213, 213);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.colm .text1{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.colm .text3{
+  line-height: 23px;
+}
+
+.colm .text2{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fa8c8c;
+}
+
+.main2{
+  display: none;
+}
+
+/*---------------------Mobile Slide Bar------------------*/
+
+.slidbar{
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.658);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+  color: #000;
+  padding: 20px;
+  /* background: transparent; */
+  backdrop-filter: blur(10px);
+}
+
+.navagation p{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.navagation p, a{
+  width: 100%;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+}
+
+.slidbar img{
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* .navagation a:hover{
+  background-color: #f1f1f1;
+} */
+
+
+ 
+/*---------------------Responsiveness--------------------*/
+
+/*---------------------760px Resolution-----------------*/
+@media screen and (max-width: 760px) {
+  body{
+    padding: 30px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo{
+    justify-content: flex-start;
+  }
+  
+  .mobile-btn{
+    display: flex;
+  }
+
+  .main1{
+    display: none;
+  }
+
+  .main2{
+    display: inline-block;
+    flex-direction: row;
+  }
+
+/**********Section 1********/
+  .mobile-sec1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .mobile-art-1 img{
+    max-width: 435px;
+    height: 300px;
+  }
+
+  .mobile-art-1 h1{
+    font-family: 'Arial Black';
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-art-1 p{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .mobile-art-1 button{
+    padding: 8px 25px;
+    background-color: #fa6868;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .mobile-art-1 button:hover{
+    background-color: #bab9b9;
+  }
+
+  /********Section 2*********/
+
+  .mobile-sec2{
+    width: 100%;
+    height: 70vh;
+    margin-top: 50px;
+    
+  }
+
+  .mobile-art-2{
+    background-color: #1b1919;
+    height: 70vh;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .mobile-art-2 .h1{
+    font-size: 30px;
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 20px;
+  }
+
+  .mobile-art-2 .text1{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .mobile-art-2 .box1{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  /**********Section 3******/
+  .mobile-sec3{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .box{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .box img{
+    width: 140px;
+  }
+
+  .baby .numb1{
+    font-size: 35px;
+    color: #bdbaba; 
+    margin-bottom: 10px;
+  }
+
+  .baby .para1{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+/*----------------------390px Resolution----------------*/
+@media screen and (max-width: 390px) {
+  body{
+    padding: 15px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo{
+    justify-content: flex-start;
+  }
+  
+  .mobile-btn{
+    display: flex;
+  }
+
+  .main1{
+    display: none;
+  }
+
+  .main2{
+    display: inline-block;
+    flex-direction: row;
+  }
+
+/**********Section 1********/
+  .mobile-sec1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .mobile-art-1 img{
+    max-width: 360px;
+    height: 280px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-art-1 h1{
+    font-family: 'Arial Black';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-art-1 p{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .mobile-art-1 button{
+    padding: 8px 25px;
+    background-color: #fa6868;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .mobile-art-1 button:hover{
+    background-color: #bab9b9;
+  }
+
+  /********Section 2*********/
+
+  .mobile-sec2{
+    width: 100%;
+    height: 70vh;
+    margin-top: 70px;
+    
+  }
+
+  .mobile-art-2{
+    background-color: #1b1919;
+    height: 60vh;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .mobile-art-2 .h1{
+    font-size: 30px;
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 20px;
+  }
+
+  .mobile-art-2 .text1{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .mobile-art-2 .box1{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  /**********Section 3******/
+  .mobile-sec3{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+
+  .box{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .box img{
+    width: 140px;
+  }
+
+  .baby .numb1{
+    font-size: 35px;
+    color: #bdbaba; 
+    margin-bottom: 10px;
+  }
+
+  .baby .para1{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+/*-----------------------360px Resolutions---------------*/
+@media screen and (max-width: 360px) {
+  body{
+    padding: 15px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .logo{
+    justify-content: flex-start;
+  }
+  
+  .mobile-btn{
+    display: flex;
+  }
+
+  .main1{
+    display: none;
+  }
+
+  .main2{
+    display: inline-block;
+    flex-direction: row;
+  }
+
+/**********Section 1********/
+  .mobile-sec1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .mobile-art-1 img{
+    max-width: 330px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-art-1 h1{
+    font-family: 'Arial Black';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-art-1 p{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .mobile-art-1 button{
+    padding: 8px 25px;
+    background-color: #fa6868;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .mobile-art-1 button:hover{
+    background-color: #bab9b9;
+  }
+
+  /********Section 2*********/
+
+  .mobile-sec2{
+    width: 100%;
+    height: 70vh;
+    margin-top: 70px;
+    
+  }
+
+  .mobile-art-2{
+    background-color: #1b1919;
+    height: 55vh;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .mobile-art-2 .h1{
+    font-size: 30px;
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 20px;
+  }
+
+  .mobile-art-2 .text1{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .mobile-art-2 .box1{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  /**********Section 3******/
+  .mobile-sec3{
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+  }
+
+  .box{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .box img{
+    width: 140px;
+  }
+
+  .baby .numb1{
+    font-size: 35px;
+    color: #bdbaba; 
+    margin-bottom: 10px;
+  }
+
+  .baby .para1{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+/*------------------------412px Resolutions---------------*/
