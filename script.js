@@ -1,4 +1,9 @@
 function showSlidebar(){
-    const menu = document.querySelector('.mobile-menu');
-    menu.style.display = "flex";
+    let menu = document.querySelector('.slidbar');
+    menu.style.display = "inline-block";
+}
+
+function hideSlidebar(){
+    let menu = document.querySelector('.slidbar');
+    menu.style.display = "none";
 }
