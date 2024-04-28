@@ -238,6 +238,10 @@ nav a:hover {
   font-weight: 600;
 }
 
+.navagation a:active{
+  color: red;
+}
+
 .slidbar img{
   cursor: pointer;
   margin-bottom: 20px;
@@ -336,7 +340,7 @@ nav a:hover {
 
   .mobile-art-2{
     background-color: #1b1919;
-    height: 74vh;
+    height: 75vh;
     color: #fff;
     padding: 20px;
   }
@@ -363,7 +367,7 @@ nav a:hover {
   .mobile-sec3{
     width: 100%;
     height: auto;
-    margin-top: 70px;
+    margin-top: 90px;
   }
 
   .box{
@@ -474,7 +478,7 @@ nav a:hover {
 
   .mobile-art-2{
     background-color: #1b1919;
-    height: 62vh;
+    height: 65vh;
     color: #fff;
     padding: 20px;
   }
@@ -501,7 +505,7 @@ nav a:hover {
   .mobile-sec3{
     width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 
   .box{
@@ -612,7 +616,7 @@ nav a:hover {
 
   .mobile-art-2{
     background-color: #1b1919;
-    height: 60vh;
+    height: 64vh;
     color: #fff;
     padding: 20px;
   }
@@ -638,7 +642,7 @@ nav a:hover {
   /**********Section 3******/
   .mobile-sec3{
     width: 100%;
-    height: auto;
+    height: 70vh;
     margin-top: -50px;
   }
 
